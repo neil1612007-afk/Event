@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Eventify - Event Organization</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">🎉 EVENTIFY</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#create">Create Event</a>
+            <a href="#dashboard">Dashboard</a>
+            <a href="#gallery">Gallery</a>
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+
+        <div class="hero-text">
+            <h1>Plan Your Perfect Event</h1>
+
+            <p>
+                Create, organize and manage your events
+                easily with Eventify.
+            </p>
+
+            <a href="#create" class="hero-btn">
+                Create an Event
+            </a>
+        </div>
+
+        <div class="hero-image">
+            🎊
+        </div>
+
+    </section>
+
+
+    <!-- Statistics -->
+    <section class="stats">
+
+        <div class="stat-card">
+            <h2 id="eventCount">0</h2>
+            <p>Total Events</p>
+        </div>
+
+        <div class="stat-card">
+            <h2>24</h2>
+            <p>Upcoming Events</p>
+        </div>
+
+        <div class="stat-card">
+            <h2>15</h2>
+            <p>Organizers</p>
+        </div>
+
+        <div class="stat-card">
+            <h2>500+</h2>
+            <p>Participants</p>
+        </div>
+
+    </section>
+
+
+    <!-- Create Event & Dashboard -->
+    <section class="main-section" id="create">
+
+        <!-- Create Event Form -->
+        <div class="form-box">
+
+            <h2>✨ Create New Event</h2>
+
+            <label for="title">Event Title</label>
+            <input
+                type="text"
+                id="title"
+                placeholder="Enter event title"
+            >
+
+            <label for="date">Event Date</label>
+            <input
+                type="date"
+                id="date"
+            >
+
+            <label for="time">Event Time</label>
+            <input
+                type="time"
+                id="time"
+            >
+
+            <label for="description">Event Description</label>
+            <textarea
+                id="description"
+                placeholder="Describe your event"
+            ></textarea>
+
+            <label for="galleryImage">Upload Gallery Image</label>
+            <input
+                type="file"
+                id="galleryImage"
+                accept="image/*"
+            >
+
+            <button type="button" onclick="addEvent()">
+                ➕ Add Event
+            </button>
+
+        </div>
+
+
+        <!-- Dashboard -->
+        <div class="dashboard" id="dashboard">
+
+            <h2>📊 Event Dashboard</h2>
+
+            <div id="eventList">
+
+                <div class="empty">
+                    <h3>No Events Yet</h3>
+                    <p>Create your first event!</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Gallery -->
+    <section class="gallery-section" id="gallery">
+
+        <h2>📸 Event Gallery</h2>
+
+        <p>
+            Memories from your amazing events
+        </p>
+
+        <div class="gallery-grid">
+
+            <div class="gallery-item">🎂</div>
+            <div class="gallery-item">🎤</div>
+            <div class="gallery-item">🎓</div>
+            <div class="gallery-item">🎊</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <h2>🎉 EVENTIFY</h2>
+
+        <p>
+            Making every event special.
+        </p>
+
+        <p>
+            &copy; 2026 Eventify. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>

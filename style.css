@@ -1,0 +1,598 @@
+/* =========================
+   GLOBAL STYLES
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7ff;
+    color: #222;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    min-height: 80px;
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 20px 7%;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffe600;
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+    min-height: 500px;
+
+    background: linear-gradient(
+        135deg,
+        #ff6a00,
+        #ee0979,
+        #6a11cb
+    );
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 60px 10%;
+}
+
+.hero-text {
+    max-width: 650px;
+}
+
+.hero-text h1 {
+    font-size: 60px;
+    margin-bottom: 25px;
+    line-height: 1.1;
+}
+
+.hero-text p {
+    font-size: 22px;
+    margin-bottom: 35px;
+    line-height: 1.6;
+}
+
+.hero-btn {
+    display: inline-block;
+
+    background: white;
+    color: #6a11cb;
+
+    padding: 16px 30px;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.hero-btn:hover {
+    transform: scale(1.05);
+    background: #ffe600;
+}
+
+.hero-image {
+    font-size: 180px;
+}
+
+
+/* =========================
+   STATISTICS
+========================= */
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+
+    padding: 50px 8%;
+}
+
+.stat-card {
+    background: white;
+
+    padding: 35px 20px;
+
+    text-align: center;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+
+    border-top: 6px solid #6a11cb;
+
+    transition: 0.3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-card h2 {
+    font-size: 40px;
+    color: #6a11cb;
+}
+
+.stat-card p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+
+/* =========================
+   MAIN SECTION
+========================= */
+
+.main-section {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+
+    gap: 35px;
+
+    padding: 50px 8%;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.form-box {
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+
+    border-top: 7px solid #ff6a00;
+}
+
+.form-box h2,
+.dashboard h2 {
+    color: #6a11cb;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+
+    font-weight: bold;
+
+    margin-top: 18px;
+    margin-bottom: 8px;
+}
+
+input,
+textarea {
+    width: 100%;
+
+    padding: 14px;
+
+    border: 2px solid #ddd;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    outline: none;
+
+    font-family: inherit;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #6a11cb;
+}
+
+textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+
+/* FILE INPUT */
+
+input[type="file"] {
+    background: #f8f9ff;
+    cursor: pointer;
+}
+
+
+/* BUTTON */
+
+button {
+    width: 100%;
+
+    padding: 16px;
+
+    margin-top: 25px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: linear-gradient(
+        90deg,
+        #ff6a00,
+        #ee0979
+    );
+
+    color: white;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 8px 20px rgba(238, 9, 121, 0.3);
+}
+
+
+/* =========================
+   DASHBOARD
+========================= */
+
+.dashboard {
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+
+    border-top: 7px solid #2575fc;
+
+    min-height: 500px;
+}
+
+
+/* =========================
+   EVENT CARD
+========================= */
+
+.event-card {
+    background: linear-gradient(
+        135deg,
+        #ffffff,
+        #f0f4ff
+    );
+
+    border-radius: 15px;
+
+    padding: 20px;
+
+    margin-bottom: 20px;
+
+    border-left: 6px solid #ee0979;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.event-card:hover {
+    transform: translateY(-3px);
+}
+
+.event-card h3 {
+    color: #ee0979;
+
+    font-size: 25px;
+
+    margin-bottom: 12px;
+}
+
+.event-card p {
+    margin: 8px 0;
+    font-size: 16px;
+}
+
+.event-card img {
+    width: 100%;
+
+    height: 220px;
+
+    object-fit: cover;
+
+    border-radius: 12px;
+
+    margin-top: 15px;
+}
+
+
+/* DELETE BUTTON */
+
+.delete-btn {
+    background: #e63946;
+
+    margin-top: 15px;
+}
+
+.delete-btn:hover {
+    background: #b91c1c;
+
+    box-shadow: none;
+}
+
+
+/* =========================
+   EMPTY DASHBOARD
+========================= */
+
+.empty {
+    text-align: center;
+
+    padding: 100px 20px;
+
+    color: #888;
+}
+
+.empty h3 {
+    font-size: 28px;
+
+    color: #6a11cb;
+
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   GALLERY
+========================= */
+
+.gallery-section {
+    text-align: center;
+
+    padding: 70px 8%;
+
+    background: linear-gradient(
+        135deg,
+        #6a11cb,
+        #2575fc
+    );
+
+    color: white;
+}
+
+.gallery-section h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.gallery-section p {
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+.gallery-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+.gallery-item {
+    height: 200px;
+
+    background: white;
+
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 80px;
+
+    transition: 0.3s;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05) rotate(2deg);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #17172b;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 45px 20px;
+}
+
+footer h2 {
+    color: #ffe600;
+    margin-bottom: 15px;
+}
+
+footer p {
+    margin: 8px;
+    color: #ccc;
+}
+
+
+/* =========================
+   RESPONSIVE - TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        display: flex;
+    }
+
+    nav a {
+        margin: 0 10px;
+    }
+
+    .hero {
+        text-align: center;
+
+        flex-direction: column;
+
+        gap: 30px;
+
+        padding: 60px 7%;
+    }
+
+    .hero-text h1 {
+        font-size: 45px;
+    }
+
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .main-section {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* =========================
+   RESPONSIVE - MOBILE
+========================= */
+
+@media (max-width: 500px) {
+
+    header {
+        padding: 15px 5%;
+    }
+
+    .logo {
+        font-size: 23px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    nav a {
+        margin: 0 5px;
+        font-size: 14px;
+    }
+
+    .hero {
+        min-height: 450px;
+        padding: 50px 5%;
+    }
+
+    .hero-text h1 {
+        font-size: 35px;
+    }
+
+    .hero-text p {
+        font-size: 18px;
+    }
+
+    .hero-image {
+        font-size: 100px;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+        padding: 40px 5%;
+    }
+
+    .main-section {
+        padding: 40px 5%;
+    }
+
+    .form-box,
+    .dashboard {
+        padding: 25px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-section {
+        padding: 50px 5%;
+    }
+
+    .gallery-section h2 {
+        font-size: 32px;
+    }
+}
